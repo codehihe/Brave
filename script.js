@@ -158,7 +158,7 @@ function setupRedirectButtons() {
     const getStartedButton = document.getElementById('get-started');
 
     const redirectToDiscord = () => {
-        window.location.href = 'https://discord.gg/invite/plusenode';
+        window.location.href = 'https://discord.gg/EZzebwRcGW';
     };
 
     startBuildingButton.addEventListener('click', redirectToDiscord);
