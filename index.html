@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brave Discord Bots</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-900 to-indigo-900 text-white">
+    <div id="starfield" class="fixed inset-0 overflow-hidden pointer-events-none"></div>
+
+    <nav class="relative container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold">Brave</div>
+            <div class="space-x-4">
+                <button class="bg-transparent hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-md">Features</button>
+                <button class="bg-transparent hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-md">Showcase</button>
+                <button class="bg-transparent hover:bg-white hover:bg-opacity-10 px-3 py-2 rounded-md">Pricing</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative container mx-auto px-4 py-16 text-center">
+        <h1 class="mb-6 text-6xl font-bold leading-tight animate-pulse">
+            Forge Your Perfect Discord Bot
+        </h1>
+        <p class="mb-8 text-xl max-w-2xl mx-auto">
+            Empower your server with custom bots that bring your ideas to life. Create, manage, and scale your Discord bots with ease.
+        </p>
+        <button id="start-building" class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105">
+            Start Building
+        </button>
+    </header>
+
+    <section class="relative container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12">Why Choose Brave?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="features"></div>
+    </section>
+
+    <section class="relative container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12">Featured Bots</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="bots"></div>
+    </section>
+
+    <section class="relative container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12">What Our Users Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="testimonials"></div>
+    </section>
+
+    <section class="relative container mx-auto px-4 py-16 text-center">
+        <h2 class="text-4xl font-bold mb-6">Ready to Elevate Your Discord Server?</h2>
+        <p class="mb-8 text-xl max-w-2xl mx-auto">Join thousands of satisfied server owners and start creating your perfect Discord bot today!</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8" id="cta-cards"></div>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+            <input type="email" placeholder="Enter your email" class="bg-white text-gray-800 w-full md:w-64 px-4 py-2 rounded-md">
+            <button id="get-started" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-2 px-6 rounded-full transition-all duration-300 transform hover:scale-105">
+                Get Started <span class="ml-2">→</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="relative container mx-auto px-4 py-8 mt-16 border-t border-gray-800">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-sm text-gray-400">&copy; 2024 Brave. All rights reserved.</div>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-white">Terms</a>
+                <a href="#" class="text-gray-400 hover:text-white">Privacy</a>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-10 right-10 animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-16 h-16 text-white opacity-75">
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 1 7.92 12.446a9 9 0 1 1 -16.626 0a7.5 7.5 0 0 1 7.92 -12.446c.13 0 .262 0 .393 0z"></path>
+            <path d="M8 9h8"></path>
+            <path d="M8 13h6"></path>
+            <path d="M8 17h4"></path>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
